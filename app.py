@@ -42,8 +42,10 @@ def process_message(message_body):
     plex = PlexServer(plex_url, plex_token)
     if message_body['type'] == 'tv':
         library = plex.library.section('TV Shows')  # type: Library
-    elif message_body['type'] == 'movies':
+    elif message_body['type'] == 'movie':
         library = plex.library.section('Movies')  # type: Library
+    else:
+        raise KeyError("Message type '{}' could not be mapped to a library".format(message_body['type']))
     logger.info("Library update", extra={'library': library.title})
     library.update()
 
