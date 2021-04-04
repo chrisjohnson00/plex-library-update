@@ -70,7 +70,7 @@ def check_configs():
     for config in required_configs:
         value = get_config(config)
         if not value:
-            raise KeyError("Config key {} was not found in environment variables or Consul")
+            raise KeyError("Config key {} was not found in environment variables or Consul".format(config))
 
 
 if __name__ == '__main__':
