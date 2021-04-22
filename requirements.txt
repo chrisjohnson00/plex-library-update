@@ -2,7 +2,7 @@ certifi==2020.12.5
 chardet==4.0.0
 idna==2.10
 kafka-python==2.0.2
-PlexAPI==4.5.1
+PlexAPI==4.5.2
 pygogo==0.13.2
 python-consul==1.1.0
 requests==2.25.1
