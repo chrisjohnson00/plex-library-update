@@ -1,5 +1,20 @@
 # Changelog
 
+## [v0.2.0](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.0) (2021-04-22)
+
+[Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.1.2...v0.2.0)
+
+**Implemented enhancements:**
+
+- feat: updating base docker image and plexapi [\#15](https://github.com/chrisjohnson00/plex-library-updater/pull/15) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
+**Merged pull requests:**
+
+- chore: bump mathieudutour/github-tag-action from v5.4 to v5.5 [\#14](https://github.com/chrisjohnson00/plex-library-updater/pull/14) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump charmixer/auto-changelog-action from v1.2 to v1.3 [\#13](https://github.com/chrisjohnson00/plex-library-updater/pull/13) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump actions/cache from v2.1.4 to v2.1.5 [\#12](https://github.com/chrisjohnson00/plex-library-updater/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump wagoid/commitlint-github-action from v3.0.7 to v3.1.0 [\#11](https://github.com/chrisjohnson00/plex-library-updater/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1.2](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.1.2) (2021-04-04)
 
 [Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.1.1...v0.1.2)
