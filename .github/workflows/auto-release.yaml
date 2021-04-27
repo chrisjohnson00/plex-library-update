@@ -3,13 +3,13 @@ name: 'Create Release'
 on:
   push:
     branches: ['main']
+    paths-ignore:
+      - '.github/workflows/*.yaml'
 
 jobs:
   create_release:
     runs-on: 'ubuntu-18.04'
     name: 'Create Release'
-    if: |
-      !startsWith(github.event.head_commit.message, 'chore:') && !startsWith(github.event.head_commit.message, 'ci:')
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v2'
