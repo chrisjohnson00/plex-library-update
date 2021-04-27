@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.2.2](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.2) (2021-04-27)
+
+[Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.1...v0.2.2)
+
+**Merged pull requests:**
+
+- ci: auto release shouldn't run on ci changes [\#17](https://github.com/chrisjohnson00/plex-library-updater/pull/17) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v0.2.1](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.1) (2021-04-27)
 
 [Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.0...v0.2.1)
