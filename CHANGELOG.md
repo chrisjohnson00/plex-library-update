@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.2.1](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.1) (2021-04-27)
+
+[Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.0...v0.2.1)
+
+**Merged pull requests:**
+
+- chore: bump WyriHaximus/github-action-get-previous-tag from v1.0.1 to v1.1 [\#16](https://github.com/chrisjohnson00/plex-library-updater/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.2.0](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.0) (2021-04-22)
 
 [Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.1.2...v0.2.0)
