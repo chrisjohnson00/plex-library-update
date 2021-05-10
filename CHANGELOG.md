@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.2.3](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.3) (2021-05-10)
+
+[Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.2...v0.2.3)
+
+**Merged pull requests:**
+
+- chore: bump wagoid/commitlint-github-action from v3.1.0 to v3.1.2 [\#22](https://github.com/chrisjohnson00/plex-library-updater/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump python from 3.9.4-slim to 3.9.5-slim [\#19](https://github.com/chrisjohnson00/plex-library-updater/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump charmixer/auto-changelog-action from v1.3 to v1.4 [\#18](https://github.com/chrisjohnson00/plex-library-updater/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.2.2](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.2) (2021-04-27)
 
 [Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.1...v0.2.2)
