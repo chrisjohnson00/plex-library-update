@@ -7,4 +7,4 @@ pygogo==0.13.2
 python-consul==1.1.0
 requests==2.25.1
 six==1.15.0
-urllib3==1.26.4
+urllib3==1.26.5
