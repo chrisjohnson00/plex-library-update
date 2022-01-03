@@ -5,6 +5,6 @@ kafka-python==2.0.2
 PlexAPI==4.5.2
 pygogo==0.13.2
 python-consul==1.1.0
-requests==2.25.1
+requests==2.27.0
 six==1.15.0
 urllib3==1.26.4
