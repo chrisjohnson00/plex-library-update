@@ -1,6 +1,6 @@
 import os
 import consul
-from kafka import KafkaConsumer
+import pulsar
 from json import loads
 import os.path
 import pygogo as gogo
@@ -17,21 +17,25 @@ logger = gogo.Gogo('struct', low_formatter=formatter).get_logger(**kwargs)
 def main():
     logger.info("Starting!!")
 
-    consumer = KafkaConsumer(
-        get_config("KAFKA_TOPIC"),
-        bootstrap_servers=[get_config('KAFKA_SERVER')],
-        auto_offset_reset='earliest',
-        enable_auto_commit=True,
-        group_id=get_config("KAFKA_CONSUMER_GROUP"),
-        value_deserializer=lambda x: loads(x.decode('utf-8')))
+    client = pulsar.Client(f"pulsar://{get_config('PULSAR_SERVER')}")
+    consumer = client.subscribe(get_config('PULSAR_TOPIC'), 'plex-library-updater',
+                                consumer_type=pulsar.ConsumerType.Shared)
 
-    for message in consumer:
-        message_body = message.value
-        logger.info("Processing new message", extra={'message_body': message_body})
-        process_message(message_body)
-        logger.info("Done processing message", extra={'message_body': message_body})
-        # force commit
-        consumer.commit_async()
+    while True:
+        msg = consumer.receive()
+        try:
+            # decode from bytes, encode with backslashes removed, decode back to a string, then load it as a dict
+            message_body = loads(msg.data().decode().encode('latin1', 'backslashreplace').decode('unicode-escape'))
+            logger.info("Processing new message", extra={'message_body': message_body})
+            process_message(message_body)
+            logger.info("Done processing message", extra={'message_body': message_body})
+            # Acknowledge successful processing of the message
+            consumer.acknowledge(msg)
+        except:  # noqa: E722
+            # Message failed to be processed
+            consumer.negative_acknowledge(msg)
+
+    client.close()
 
 
 def process_message(message_body):
@@ -62,9 +66,8 @@ def get_config(key, config_path=CONFIG_PATH):
 
 def check_configs():
     required_configs = [
-        'KAFKA_TOPIC',
-        'KAFKA_SERVER',
-        'KAFKA_CONSUMER_GROUP',
+        'PULSAR_SERVER',
+        'PULSAR_TOPIC',
         'PLEX_SERVER_HOST',
         'PLEX_SERVER_PORT',
         'PLEX_TOKEN',
