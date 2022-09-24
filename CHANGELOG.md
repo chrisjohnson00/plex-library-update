@@ -1,5 +1,21 @@
 # Changelog
 
+## [v0.2.4](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.4) (2022-09-24)
+
+[Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.3...v0.2.4)
+
+**Breaking changes:**
+
+- refactor: replace kafka with pulsar [\#126](https://github.com/chrisjohnson00/plex-library-updater/pull/126) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
+**Merged pull requests:**
+
+- chore: bump wagoid/commitlint-github-action from 3.1.2 to 3.1.4 [\#29](https://github.com/chrisjohnson00/plex-library-updater/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump docker/login-action from 1 to 1.9.0 [\#27](https://github.com/chrisjohnson00/plex-library-updater/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump docker/build-push-action from 2 to 2.4.0 [\#26](https://github.com/chrisjohnson00/plex-library-updater/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump actions/checkout from 2 to 2.3.4 [\#25](https://github.com/chrisjohnson00/plex-library-updater/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: bump actions/create-release from 1 to 1.1.4 [\#24](https://github.com/chrisjohnson00/plex-library-updater/pull/24) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.2.3](https://github.com/chrisjohnson00/plex-library-updater/tree/v0.2.3) (2021-05-10)
 
 [Full Changelog](https://github.com/chrisjohnson00/plex-library-updater/compare/v0.2.2...v0.2.3)
